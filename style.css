@@ -1,0 +1,112 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+
+                        /* navigation */
+
+.top {
+    padding: 10px;
+}
+
+.top a {
+    text-decoration: none;
+    color: #000000;   
+}
+
+#logo {
+    display: inline;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+
+}
+
+#icon_search {
+    display: inline;
+    float: right;
+    padding-top: 8px;
+        padding-right: 20px;
+    width: 23px;
+    height: 23px;
+}
+
+#icon_user {
+    display: inline;
+    float: right;
+    padding-top: 5px;
+    padding-right: 5%;
+    width: 27px;
+    height: 27px;
+}
+
+.minitabs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.minitabs ul li {
+    float: left;
+    width: 25%
+}
+
+.minitabs ul li a {
+    display: block;
+    color: #909090;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.minitabs ul li a.active {
+    color: #000000;
+    border-bottom: 4px solid #000000;
+}
+
+.minitabs ul li a:hover {
+    border-bottom: 4px solid #000000;
+}
+
+
+                        /* section */
+#img_main {
+    max-width: 100%;
+    height: auto;        
+}
+
+
+                        /* screen */
+
+@media (min-width: 544px) {
+    .container {
+        max-width: 576px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 940px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
