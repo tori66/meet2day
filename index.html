@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
+
+<head>
     <meta charset="utf-8">
     <title>번개모임 플랫폼 &ndash; Meet Today</title>
     <meta name="keywords" content="모임, 소모임, 번개, 취미, 액티비티, 미팅">
@@ -19,19 +20,171 @@
             <a href="index.html">
                 <h1 id="logo">MEET2DAY</h1>
             </a>
-            <a href="login.html"><img id="icon_user" src="icon/user.svg"></a>
-            <img id="icon_search" src="icon/search.svg">
+            <a href="login.html"><img id="icon-user" src="icon/user.svg"></a>
+            <img id="icon-search" src="icon/search.svg">
+
         </div>
-        <nav class="minitabs">
-            <ul>
-                <li><a href="index.html" class="active">홈</a></li>
-                <li><a href="join.html">모임참여</a></li>
-                <li><a href="open.html">모임개설</a></li>
-                <li><a href="mymeet.html">내모임</a></li>
-            </ul>
-        </nav>
     </header>
-    <section>
-        <img id="img_main" src="image/peopleonwall.jpg">
+
+    <nav class="minitabs">
+        <ul>
+            <li><a href="index.html" class="minitabs_active">홈</a></li>
+            <li><a href="join.html">모임참여</a></li>
+            <li><a href="open.html">모임개설</a></li>
+            <li><a href="mymeet.html">내모임</a></li>
+        </ul>
+    </nav>
+
+    <section class="mainimage">
+        <img src="image/slideshow1.jpg" id="mainImage" alt="Image" style="width:100%;height:auto;padding:3px 0 0 0;">
+        <script>
+            var myImage = document.getElementById("mainImage");
+            var imageArray = ["image/slideshow1.jpg", "image/slideshow2.jpg", "image/slideshow3.jpg"];
+            var imageIndex = 0;
+
+            function changeImage() {
+                myImage.setAttribute("src", imageArray[imageIndex]);
+                imageIndex++;
+                if (imageIndex >= imageArray.length) {
+                    imageIndex = 0;
+                }
+            }
+            setInterval(changeImage, 2000);
+        </script>
     </section>
+
+    <section class="colum">
+        <form>
+            <h4 style="padding: 5px">지역별 분류</h4>
+            <select class="search-region">
+                <option selected>서울</option>
+                <option>경기</option>
+                <option>인천</option>
+                <option>충남</option>
+                <option>충북</option>
+                <option>전남</option>
+                <option>전북</option>
+                <option>경남</option>
+                <option>경북</option>
+            </select>
+            <label>
+                <input class="search-region-detail" type="text">
+            </label>
+        </form>
+        <div style="margin:45px 0 0 0">
+            <div class="meet-single">
+                <span class="meet-single-id" style="padding:0; margin:0; font-size:6px; color:#adadad;">[모임번호 19080800001]</span>
+                <span class="meet-single-read" style="padding:0; margin:0; font-size:6px; color:#adadad; float:right;">조회수: 100</span>
+                <h5 class="meet-single-title">오늘 저녁 퇴근 후 피맥하실 직장인 모이세요. 4명/성별무관/서울강남</h5>
+                <div style="font-size: 10px; padding: 5px; color: #adadad;">
+                    <span class="meet-single-date">2019-08-08</span> ㅣ
+                    <span class="meet-single-time">19:00~22:00</span> ㅣ
+                    <span class="meet-single-number">4명 </span> ㅣ
+                    <span class="meet-single-cost"> 20,000원</span>
+                </div>
+                <div style="font-size: 10px; padding: 3px;">
+                    <span class="meet-single-region" style="font-style:italic; color:#00e2e2">#서울/강남구</span>
+                    <span class="meet-single-category" style="font-style:italic; color:#00e2e2"> #사교/미팅/파티</span>
+                    <span class="meet-single-scrap"> ㅣ스크랩</span>
+                    <input class="button1" type="button" value="참여신청" style="float:right">
+                </div>
+            </div>
+
+            <div class="meet-single">
+                <span class="meet-single-id" style="padding:0; margin:0; font-size:6px; color:#adadad;">[모임번호 19080800001]</span>
+                <span class="meet-single-read" style="padding:0; margin:0; font-size:6px; color:#adadad; float:right;">조회수: 100</span>
+                <h5 class="meet-single-title">오늘 저녁 퇴근 후 피맥하실 직장인 모이세요. 4명/성별무관/서울강남</h5>
+                <div style="font-size: 10px; padding: 5px; color: #adadad;">
+                    <span class="meet-single-date">2019-08-08</span> ㅣ
+                    <span class="meet-single-time">19:00~22:00</span> ㅣ
+                    <span class="meet-single-number">4명 </span> ㅣ
+                    <span class="meet-single-cost"> 20,000원</span>
+                </div>
+                <div style="font-size: 10px; padding: 3px;">
+                    <span class="meet-single-region" style="font-style:italic; color:#00e2e2">#서울/강남구</span>
+                    <span class="meet-single-category" style="font-style:italic; color:#00e2e2"> #사교/미팅/파티</span>
+                    <span class="meet-single-scrap"> ㅣ스크랩</span>
+                    <input class="button1" type="button" value="참여신청" style="float:right">
+                </div>
+            </div>
+
+            <div class="meet-single">
+                <span class="meet-single-id" style="padding:0; margin:0; font-size:6px; color:#adadad;">[모임번호 19080800001]</span>
+                <span class="meet-single-read" style="padding:0; margin:0; font-size:6px; color:#adadad; float:right;">조회수: 100</span>
+                <h5 class="meet-single-title">오늘 저녁 퇴근 후 피맥하실 직장인 모이세요. 4명/성별무관/서울강남</h5>
+                <div style="font-size: 10px; padding: 5px; color: #adadad;">
+                    <span class="meet-single-date">2019-08-08</span> ㅣ
+                    <span class="meet-single-time">19:00~22:00</span> ㅣ
+                    <span class="meet-single-number">4명 </span> ㅣ
+                    <span class="meet-single-cost"> 20,000원</span>
+                </div>
+                <div style="font-size: 10px; padding: 3px;">
+                    <span class="meet-single-region" style="font-style:italic; color:#00e2e2">#서울/강남구</span>
+                    <span class="meet-single-category" style="font-style:italic; color:#00e2e2"> #사교/미팅/파티</span>
+                    <span class="meet-single-scrap"> ㅣ스크랩</span>
+                    <input class="button1" type="button" value="참여신청" style="float:right">
+                </div>
+            </div>
+
+            <div class="meet-single">
+                <span class="meet-single-id" style="padding:0; margin:0; font-size:6px; color:#adadad;">[모임번호 19080800001]</span>
+                <span class="meet-single-read" style="padding:0; margin:0; font-size:6px; color:#adadad; float:right;">조회수: 100</span>
+                <h5 class="meet-single-title">오늘 저녁 퇴근 후 피맥하실 직장인 모이세요. 4명/성별무관/서울강남</h5>
+                <div style="font-size: 10px; padding: 5px; color: #adadad;">
+                    <span class="meet-single-date">2019-08-08</span> ㅣ
+                    <span class="meet-single-time">19:00~22:00</span> ㅣ
+                    <span class="meet-single-number">4명 </span> ㅣ
+                    <span class="meet-single-cost"> 20,000원</span>
+                </div>
+                <div style="font-size: 10px; padding: 3px;">
+                    <span class="meet-single-region" style="font-style:italic; color:#00e2e2">#서울/강남구</span>
+                    <span class="meet-single-category" style="font-style:italic; color:#00e2e2"> #사교/미팅/파티</span>
+                    <span class="meet-single-scrap"> ㅣ스크랩</span>
+                    <input class="button1" type="button" value="참여신청" style="float:right">
+                </div>
+            </div>
+
+            <div class="meet-single">
+                <span class="meet-single-id" style="padding:0; margin:0; font-size:6px; color:#adadad;">[모임번호 19080800001]</span>
+                <span class="meet-single-read" style="padding:0; margin:0; font-size:6px; color:#adadad; float:right;">조회수: 100</span>
+                <h5 class="meet-single-title">오늘 저녁 퇴근 후 피맥하실 직장인 모이세요. 4명/성별무관/서울강남</h5>
+                <div style="font-size: 10px; padding: 5px; color: #adadad;">
+                    <span class="meet-single-date">2019-08-08</span> ㅣ
+                    <span class="meet-single-time">19:00~22:00</span> ㅣ
+                    <span class="meet-single-number">4명 </span> ㅣ
+                    <span class="meet-single-cost"> 20,000원</span>
+                </div>
+                <div style="font-size: 10px; padding: 3px;">
+                    <span class="meet-single-region" style="font-style:italic; color:#00e2e2">#서울/강남구</span>
+                    <span class="meet-single-category" style="font-style:italic; color:#00e2e2"> #사교/미팅/파티</span>
+                    <span class="meet-single-scrap"> ㅣ스크랩</span>
+                    <input class="button1" type="button" value="참여신청" style="float:right">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="colum">
+        <h4>테마별 분류</h4>
+    </section>
+
+    <section class="colum">
+        <h4>날짜별 분류</h4>
+    </section>
+
+    <section>
+        <div class="colum">
+            네번째
+        </div>
+        <div class="colum">
+            다섯번째
+        </div>
+        <div class="colum">
+            여섯번째
+        </div>
+    </section>
+
+
 </body></html>
