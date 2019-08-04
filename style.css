@@ -148,7 +148,7 @@ h5 {
 
 
 
-/* section */
+/* section - region */
 
 .search-region {
     display: inline-block;
@@ -176,7 +176,33 @@ h5 {
     border-top: 1px solid #d3d3d3;
 }
 
-.button1 {
-    margin: -5px 5px -5px 5px;
-    font-size: 10px;
+.meet-single-title {
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
+
+.button1 {
+    float:right;
+    margin: 10px;
+    font-size: 10px;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ed4c4c
+}
+
+.button2 {
+   width: 96%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #0f0f0f;
+    background-color: #ffffff;
+    
+    
+}
+
+
+
+
+
+
