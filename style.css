@@ -46,6 +46,12 @@ h5 {
     display: none;
 }
 
+.cell {
+    display: inline-block;
+    padding: 7px;
+    margin: 0 1%;
+}
+
 
 @media all and (min-width: 768px) and (max-width:1024px) {
     .colum {
@@ -66,16 +72,24 @@ h5 {
         padding: 0;
         font-size: 0.9em;
     }
-    
+
     #login a {
-    text-decoration: none;
-        color: #9a9a9a; 
-}
+        text-decoration: none;
+        color: #9a9a9a;
+    }
 
     #icon-user {
         display: none;
     }
+
+    .cell {
+        display: inline-block;
+        padding: 7px;
+        margin: 0 2%;
+    }
 }
+
+
 
 @media all and (min-width: 1025px) {
     .colum {
@@ -94,7 +108,7 @@ h5 {
         margin-right: auto;
     }
 
-     #login {
+    #login {
         display: inline-block;
         float: right;
         text-decoration: none;
@@ -102,16 +116,23 @@ h5 {
         padding: 0;
         font-size: 0.9em;
     }
-    
+
     #login a {
-    text-decoration: none;
-        color: #9a9a9a; 
-}
+        text-decoration: none;
+        color: #9a9a9a;
+    }
 
     #icon-user {
         display: none;
     }
+
+    .cell {
+        display: inline-block;
+        padding: 7px;
+        margin: 0 4%;
+    }
 }
+
 
 
 
@@ -139,7 +160,7 @@ header {
 
 #logo a {
     text-decoration: none;
-        color: #000000; 
+    color: #000000;
 }
 
 #icon-search {
@@ -173,15 +194,11 @@ nav {
 
 .inner {
     display: table-cell;
-        vertical-align: middle;
+    vertical-align: middle;
     text-align: center;
 }
 
-.cell {
-    display: inline-block;
-    padding: 7px;
-    margin: 0;    
-}
+
 
 nav a {
     color: #909090;
@@ -195,19 +212,19 @@ nav a {
 
 
 .dropdown {
-  float: left;
-  overflow: hidden;
+    float: left;
+    overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
 }
 
 .dropdown-content {
