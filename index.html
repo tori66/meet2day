@@ -58,17 +58,15 @@
                     <a href="index.html" class="cell_home">홈</a>
                 </div>
                 <div class="cell">
-                   <div class="dropdown">
-                     <button class="dropbtn">모임참여</button>
-                    <div class="dropdown-content">
-                        <a href="#">전체보기</a>
-                        <a href="#">지역별</a>
-                        <a href="#">테마별</a>
-                        <a href="#">날짜별</a>
-                    </div>  
-                       
-                   </div>
-                    
+                    <div class="dropdown">
+                        <button class="dropbtn">모임참여</button>
+                        <div class="dropdown-content">
+                            <a href="index.html">전체보기</a>
+                            <a href="meet-region.html">지역별</a>
+                            <a href="meet-category.html">테마별</a>
+                            <a href="meet-date.html">날짜별</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="cell">
                     <a href="open.html">모임개설</a>
@@ -82,51 +80,34 @@
             </div>
         </div>
     </nav>
+    <!-- 현재 페이지 밑줄 표현 추가하기 -->
+
 
     <section>
         <figure class="slideshow-container">
-
             <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="http://localhost/image/slideshow1.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <div class="numbertext"> </div>
+                <img src="/image/slideshow1.jpg" style="width:100%">
+                <div class="text"> </div>
             </div>
-
             <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="http://localhost/image/slideshow2.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
+                <div class="numbertext"> </div>
+                <img src="/image/slideshow2.jpg" style="width:100%">
+                <div class="text"> </div>
             </div>
-
             <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="http://localhost/image/slideshow3.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
+                <div class="numbertext"> </div>
+                <img src="/image/slideshow3.jpg" style="width:100%">
+                <div class="text"> </div>
             </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
-            <br>
-
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-
         </figure>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </section>
-
-
-
-
-
-
-
-
-
 
     <section>
         <div class="colum">
@@ -183,48 +164,41 @@
                     <a href="#"><img src="/image/ctgr_study.jpg" alt="study and education"></a>
                     <figcaption>학습/교육</figcaption>
                 </li>
-                <li>
-                    <a href="#"><img src="/image/ctgr_study.jpg" alt="study and education"></a>
-                    <figcaption>학습/교육</figcaption>
 
-                </li>
-                <li>
-                    <a href="#"><img src="/image/ctgr_study.jpg" alt="study and education"></a>
-                    <figcaption>학습/교육</figcaption>
-
-                </li>
-                <li>
-                    <a href="#"><img src="/image/ctgr_study.jpg" alt="study and education"></a>
-                    <figcaption>학습/교육</figcaption>
-
-                </li>
-                <li>
-                    <a href="#"><img src="/image/ctgr_study.jpg" alt="study and education"></a>
-                    <figcaption>학습/교육</figcaption>
-
-                </li>
-                <li>
-                    <a href="#"><img src="/image/ctgr_study.jpg" alt="study and education"></a>
-                    <figcaption>학습/교육</figcaption>
-
-                </li>
-                <li>
-                    <a href="#"><img src="/image/ctgr_study.jpg" alt="study and education"></a>
-                    <figcaption>학습/교육</figcaption>
-
-                </li>
-                <li>
-                    <a href="#"><img src="/image/ctgr_study.jpg" alt="study and education"></a>
-                    <figcaption>학습/교육</figcaption>
-
-                </li>
             </ul>
         </figure>
     </section>
 
+
+
+
+
     <section class="colum">
         <h4>날짜별 분류</h4>
+        <dl>
+            <dt>Menu 1</dt>
+            <dd>
+                첫번째 탭메뉴 내용은 여기
+            </dd>
+
+            <dt>Menu 2</dt>
+            <dd class="hidden">
+                두번째 탭메뉴 내용은 여기
+            </dd>
+        </dl>
+
+        <script>
+            var $menuEle = $('dt'); // 탭메뉴를 변수에 지정
+            $menuEle.click(function() { // 탭메뉴 클릭 이벤트
+                $('dd').addClass('hidden');
+                $(this).next().removeClass('hidden');
+            })
+        </script>
     </section>
+
+
+
+
 
     <section>
         <div class="colum">
