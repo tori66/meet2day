@@ -77,10 +77,10 @@ h5 {
         text-decoration: none;
         color: #9a9a9a;
     }
-    
+
     #login a:hover {
-           color: #000000;
-}
+        color: #000000;
+    }
 
     #icon-user {
         display: none;
@@ -125,10 +125,10 @@ h5 {
         text-decoration: none;
         color: #9a9a9a;
     }
-    
-        #login a:hover {
-           color: #000000;
-}
+
+    #login a:hover {
+        color: #000000;
+    }
 
     #icon-user {
         display: none;
@@ -211,30 +211,40 @@ nav a {
 }
 
 .cell a:active {
-   border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #000000;
     color: #000000;
 }
 
 .cell a:hover {
     border-bottom: 2px solid #000000;
-        color: #000000;
+    color: #000000;
 }
 
 .dropbtn {
     font-size: 0.9em;
     border: none;
+    -ms-border: none;
+    -webkit-border: none;
+    -moz-border: none;
     outline: none;
+    -ms-outline: none;
+    -webkit-outline: none;
+    -moz-outline: none;
     color: #909090;
+    -ms-color: #909090;
+    -webkit-color: #909090;
+    -moz-color: #909090;
     padding: 0;
+    -ms-padding: 0;
+    -webkit-padding: 0;
+    -moz-padding: 0;
     background-color: #ffffff;
+    -ms-background-color: #ffffff;
+    -webkit-background-color: #ffffff;
+    -moz-background-color: #ffffff;
     font-family: inherit;
     margin: 0;
 }
-
-.dropbtn :hover {
-color: #000000;
-}
-
 
 
 
