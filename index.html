@@ -41,6 +41,7 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -51,7 +52,7 @@
         <a href="#a"><img id="icon-search" src="icon/search.svg"></a>
     </header>
 
-    <nav>
+    <nav class="navmenu">
         <div class="outer">
             <div class="inner">
                 <div class="cell">
@@ -81,8 +82,23 @@
         </div>
     </nav>
     <!-- 현재 페이지 밑줄 표현 추가하기 -->
+<script>
+      $( document ).ready( function() {
+        var jbOffset = $( '.navmenu' ).offset();
+        $( window ).scroll( function() {
+          if ( $( document ).scrollTop() > jbOffset.top ) {
+            $( '.navmenu' ).addClass( 'navFixed' );
+          }
+          else {
+            $( '.navmenu' ).removeClass( 'navFixed' );
+          }
+        });
+      } );
+    </script>
 
-
+   
+   
+   
     <section>
         <figure class="slideshow-container">
             <div class="mySlides fade">
@@ -93,7 +109,7 @@
             <div class="mySlides fade">
                 <div class="numbertext"> </div>
                 <img src="/image/slideshow2.jpg" style="width:100%">
-                <div class="text"> </div>
+                <div class="text">마음이 통하는 사람들과 함께 하는 오늘</div>
             </div>
             <div class="mySlides fade">
                 <div class="numbertext"> </div>
@@ -101,7 +117,6 @@
                 <div class="text"> </div>
             </div>
         </figure>
-        <br>
         <div style="text-align:center">
             <span class="dot"></span>
             <span class="dot"></span>
@@ -109,25 +124,35 @@
         </div>
     </section>
 
-    <section>
+    <section style="margin:10px 5px;">
         <div class="colum">
-            <form>
+            <div>
                 <h4 style="padding: 5px">지역별 분류</h4>
                 <select class="search-region">
-                    <option selected>서울</option>
-                    <option>경기</option>
+                    <option>서울</option>
+                     <option>부산</option>      
                     <option>인천</option>
+                    <option>경기</option>
                     <option>충남</option>
                     <option>충북</option>
                     <option>전남</option>
                     <option>전북</option>
                     <option>경남</option>
                     <option>경북</option>
+                     <option>제주</option>
                 </select>
-                <label>
-                    <input class="search-region-detail" type="text">
-                </label>
-            </form>
+                <select class="search-region-detail">
+                    <option>#</option>
+                    <option>#</option>
+                    <option>#</option>
+                    <option>#</option>
+                    <option>#</option>
+                    <option>#</option>
+                    <option>#</option>
+                    <option>#</option>
+                    <option>#</option>
+                </select>
+            </div>
             <div style="margin:45px 0 0 0">
                 <div class="meet-single">
                     <span class="meet-single-id">모임번호 [19080800001]</span>

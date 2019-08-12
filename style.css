@@ -10,7 +10,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+section {
     padding: 0;
     margin: 0;
 }
@@ -37,8 +38,8 @@ h5 {
     float: right;
     margin: 0;
     padding: 0;
-    width: 25px;
-    height: 25px;
+    width: 1.4em;
+    height: 1.4em;
 }
 
 #login {
@@ -50,6 +51,7 @@ h5 {
     padding: 5px;
     margin: 0 1%;
 }
+
 
 
 @media all and (min-width: 768px) and (max-width:1024px) {
@@ -159,7 +161,7 @@ header {
     font-family: verdana;
     display: inline-block;
     float: left;
-    font-size: 25px;
+    font-size: 1.4em;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -174,10 +176,10 @@ header {
 #icon-search {
     display: inline-block;
     float: right;
-    margin: 0 2% 0 0;
+    margin: 0 3% 0 0;
     padding: 0;
-    width: 23px;
-    height: 23px;
+    width: 1.2em;
+    height: 1.2em;
 }
 
 
@@ -186,10 +188,27 @@ header {
 
 /* navigation */
 
-nav {
-    max-width: 1000px;
+.navmenu {
+   
     margin: 0 auto;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+
 }
+
+.navFixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+    text-align: center;
+        padding: 2px;
+
+}
+
+
+
+
 
 .outer {
     display: table;
@@ -279,6 +298,7 @@ nav a {
 
 
 
+
 /* slideshow */
 
 * {
@@ -302,8 +322,8 @@ img {
 
 /* Caption text */
 .text {
-    color: #000000;
-    font-size: 15px;
+    color: #ffffff;
+    font-size: 1em;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -322,8 +342,8 @@ img {
 
 /* The dots/bullets/indicators */
 .dot {
-    height: 10px;
-    width: 10px;
+    height: 0.5em;
+    width: 0.5em;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
@@ -364,9 +384,9 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 768px) {
     .text {
-        font-size: 11px
+        font-size: 0.8em;
     }
 }
 
@@ -383,19 +403,19 @@ img {
     height: 27px;
     padding: 3px;
     margin: 5px;
-    border: 1px solid #a2a2a2;
-    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #a2a2a2;
 }
 
 .search-region-detail {
     display: inline-block;
     float: left;
-    width: 55%;
-    height: 15px;
-    padding: 5px;
+    width: 45%;
+    height: 27px;
+    padding: 3px;
     margin: 5px;
-    border: 1px solid #a2a2a2;
-    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #a2a2a2;
 }
 
 .meet-single {
@@ -503,24 +523,25 @@ img {
 
 /* section - date */
 dl {
-   position: relative;
+    position: relative;
 }
+
 dt {
-   height: 30px;
-   float: left;
-   width: 50%;
-   z-index: 9;
-   position: relative;
+    height: 30px;
+    float: left;
+    width: 50%;
+    z-index: 9;
+    position: relative;
 }
+
 dd {
-   position: absolute;
-   padding-top: 30px;
-   background-color: #f3f3f3;
-   width: 50%;
-   height: 200px;
+    position: absolute;
+    padding-top: 30px;
+    background-color: #f3f3f3;
+    width: 50%;
+    height: 200px;
 }
+
 dd.hidden {
-   display: none;
+    display: none;
 }
-
-
