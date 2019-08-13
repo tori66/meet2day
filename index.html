@@ -48,7 +48,7 @@
     <header>
         <h1 id="logo"><a href="index.html">meet2day</a></h1>
         <p id="login"><a href="login.html">로그인 및 회원가입</a></p>
-        <a href="login.html"><img id="icon-user" src="icon/user2.png"></a>
+        <a href="login.html"><img id="icon-user" src="icon/user2.svg"></a>
         <a href="#a"><img id="icon-search" src="icon/search.svg"></a>
     </header>
 
@@ -78,42 +78,51 @@
                 <div class="cell">
                     <a href="community.html">커뮤니티</a>
                 </div>
+                 <div class="cell">
+                <div class="dropdown">
+                    <button class="dropbtn" style="font-size:1.4em">+</button>
+                    <div class="dropdown-content" style="right:45px">
+                        <a href="notice.html">공지사항</a>
+                        <a href="site-intro.html">사이트소개</a>
+                        <a href="contact.html">문의하기</a>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </nav>
     <!-- 현재 페이지 밑줄 표현 추가하기 -->
-<script>
-      $( document ).ready( function() {
-        var jbOffset = $( '.navmenu' ).offset();
-        $( window ).scroll( function() {
-          if ( $( document ).scrollTop() > jbOffset.top ) {
-            $( '.navmenu' ).addClass( 'navFixed' );
-          }
-          else {
-            $( '.navmenu' ).removeClass( 'navFixed' );
-          }
+    <script>
+        $(document).ready(function() {
+            var jbOffset = $('.navmenu').offset();
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > jbOffset.top) {
+                    $('.navmenu').addClass('navFixed');
+                } else {
+                    $('.navmenu').removeClass('navFixed');
+                }
+            });
         });
-      } );
     </script>
 
-   
-   
-   
+
+
+
     <section>
         <figure class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext"> </div>
-                <img src="/image/slideshow1.jpg" style="width:100%">
+                <img src="image/slideshow1.jpg" style="width:100%">
                 <div class="text"> </div>
             </div>
             <div class="mySlides fade">
                 <div class="numbertext"> </div>
-                <img src="/image/slideshow2.jpg" style="width:100%">
-                <div class="text">마음이 통하는 사람들과 함께 하는 오늘</div>
+                <img src="image/slideshow2.jpg" style="width:100%">
+                <div class="text" style="font-weight:bold">마음이 통하는 사람들과 함께 하는 오늘</div>
             </div>
             <div class="mySlides fade">
                 <div class="numbertext"> </div>
-                <img src="/image/slideshow3.jpg" style="width:100%">
+                <img src="image/slideshow3.jpg" style="width:100%">
                 <div class="text"> </div>
             </div>
         </figure>
@@ -124,33 +133,15 @@
         </div>
     </section>
 
-    <section style="margin:10px 5px;">
+    <section>
         <div class="colum">
-            <div>
-                <h4 style="padding: 5px">지역별 분류</h4>
-                
-                <style>
-select {
-width: 200px; 
-padding: .8em .5em; 
-border: 1px solid #999;
-font-family: inherit; 
-background: url('arrow.jpg') no-repeat 95% 50%; 
-border-radius: 0px; 
--webkit-appearance: none; 
--moz-appearance: none;
-appearance: none;
-}
 
-select::-ms-expand {
-    display: none;
-}
-</style>
-                
-                
-                <select class="search-region">
-                    <option>서울</option>
-                     <option>부산</option>      
+            <h4>지역별 분류</h4>
+            <div>
+
+                <select class="search-region" style="width:20%">
+                    <option>대분류</option>
+                    <option>부산</option>
                     <option>인천</option>
                     <option>경기</option>
                     <option>충남</option>
@@ -159,10 +150,22 @@ select::-ms-expand {
                     <option>전북</option>
                     <option>경남</option>
                     <option>경북</option>
-                     <option>제주</option>
-                </select>
-                <select class="search-region-detail">
+                    <option>제주</option>
+                </select>&nbsp;
+                <select class="search-region-detail" style="width:30%">
+                    <option>소분류</option>
                     <option>#</option>
+                    <option>#</option>
+                    <option>#</option>
+                    <option>#</option>
+                    <option>#</option>
+                    <option>#</option>
+                    <option>#</option>
+                    <option>#</option>
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               
+                                <select class="search-region-detail" style="width:35%">
+                    <option>핫플레이스</option>
                     <option>#</option>
                     <option>#</option>
                     <option>#</option>
@@ -173,7 +176,8 @@ select::-ms-expand {
                     <option>#</option>
                 </select>
             </div>
-            <div style="margin:45px 0 0 0">
+
+            <div>
                 <div class="meet-single">
                     <span class="meet-single-id">모임번호 [19080800001]</span>
                     <span class="meet-single-read">ㅣ 조회수 100</span>
@@ -198,48 +202,51 @@ select::-ms-expand {
                 </label>
             </div>
         </div>
+
+
+        <div class="colum">
+            <h4>테마별 분류</h4>
+            <figure class="image-button">
+                <ul>
+
+                    <li>
+                        <a href="#"><img src="/image/ctgr_study.jpg" alt="study and education"></a>
+                        <figcaption>학습/교육</figcaption>
+                    </li>
+
+                </ul>
+            </figure>
+        </div>
+
+
+
+
+
+
+        <div class="colum">
+            <h4>날짜별 분류</h4>
+            <dl>
+                <dt>Menu 1</dt>
+                <dd>
+                    첫번째 탭메뉴 내용은 여기
+                </dd>
+
+                <dt>Menu 2</dt>
+                <dd class="hidden">
+                    두번째 탭메뉴 내용은 여기
+                </dd>
+            </dl>
+
+            <script>
+                var $menuEle = $('dt'); // 탭메뉴를 변수에 지정
+                $menuEle.click(function() { // 탭메뉴 클릭 이벤트
+                    $('dd').addClass('hidden');
+                    $(this).next().removeClass('hidden');
+                })
+            </script>
+        </div>
     </section>
 
-    <section class="colum">
-        <h4>테마별 분류</h4>
-        <figure class="image-button">
-            <ul>
-
-                <li>
-                    <a href="#"><img src="/image/ctgr_study.jpg" alt="study and education"></a>
-                    <figcaption>학습/교육</figcaption>
-                </li>
-
-            </ul>
-        </figure>
-    </section>
-
-
-
-
-
-    <section class="colum">
-        <h4>날짜별 분류</h4>
-        <dl>
-            <dt>Menu 1</dt>
-            <dd>
-                첫번째 탭메뉴 내용은 여기
-            </dd>
-
-            <dt>Menu 2</dt>
-            <dd class="hidden">
-                두번째 탭메뉴 내용은 여기
-            </dd>
-        </dl>
-
-        <script>
-            var $menuEle = $('dt'); // 탭메뉴를 변수에 지정
-            $menuEle.click(function() { // 탭메뉴 클릭 이벤트
-                $('dd').addClass('hidden');
-                $(this).next().removeClass('hidden');
-            })
-        </script>
-    </section>
 
 
 
