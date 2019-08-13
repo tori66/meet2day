@@ -219,7 +219,7 @@ header {
 .inner {
     display: table-cell;
     vertical-align: middle;
-    text-align: center;
+    text-align: justify;
 }
 
 nav a {
