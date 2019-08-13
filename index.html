@@ -7,7 +7,7 @@
     <meta name="keywords" content="번개모임, 즉석모임, 소모임, 취미, 키즈, 여가, 액티비티, 미팅">
     <meta name="description" content="함께 하는 세상의 모든 활동">
     <meta name="author" content="유병현">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!--
     <meta property="og:type" content="website">
@@ -78,15 +78,15 @@
                 <div class="cell">
                     <a href="community.html">커뮤니티</a>
                 </div>
-                 <div class="cell">
-                <div class="dropdown">
-                    <button class="dropbtn" style="font-size:1.4em">+</button>
-                    <div class="dropdown-content2">
-                        <a href="notice.html">공지사항</a>
-                        <a href="site-intro.html">사이트소개</a>
-                        <a href="contact.html">문의하기</a>
+                <div class="cell">
+                    <div class="dropdown">
+                        <button class="dropbtn" style="font-size:1.4em">+</button>
+                        <div class="dropdown-content2">
+                            <a href="notice.html">공지사항</a>
+                            <a href="site-intro.html">사이트소개</a>
+                            <a href="contact.html">문의하기</a>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -103,6 +103,7 @@
                 }
             });
         });
+
     </script>
 
 
@@ -137,9 +138,8 @@
         <div class="colum">
 
             <h4>지역별 분류</h4>
-            <div>
-
-                <select class="search-region" style="width:20%">
+            <div style="display:block">
+                <select class="search-region" style="width:20%; min-width:80px;">
                     <option>대분류</option>
                     <option>부산</option>
                     <option>인천</option>
@@ -152,7 +152,7 @@
                     <option>경북</option>
                     <option>제주</option>
                 </select>&nbsp;
-                <select class="search-region-detail" style="width:30%">
+                <select class="search-region-detail" style="width:25%; min-width:85px;">
                     <option>소분류</option>
                     <option>#</option>
                     <option>#</option>
@@ -163,8 +163,8 @@
                     <option>#</option>
                     <option>#</option>
                 </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                               
-                                <select class="search-region-detail" style="width:35%">
+
+                <select class="search-region-hot" style="width:35%; min-width:90px;">
                     <option>핫플레이스</option>
                     <option>#</option>
                     <option>#</option>
@@ -176,12 +176,13 @@
                     <option>#</option>
                 </select>
             </div>
+          
 
             <div>
                 <div class="meet-single">
-                    <span class="meet-single-id">모임번호 [19080800001]</span>
-                    <span class="meet-single-read">ㅣ 조회수 100</span>
-                    <h5 class="meet-single-title">오늘 저녁 퇴근 후 피맥하실 직장인 모이세요. 4명/성별무관/서울강남</h5>
+                    <span class="meet-single-id"> [19080800001]</span>
+                    <span class="meet-single-read"> 조회수 100</span>
+                    <p class="meet-single-title">오늘 저녁 퇴근 후 피맥하실 직장인 모이세요 4명/성별무관/서울강남/2만원</p>
                     <div class="meet-single-info">
                         <span class="meet-single-date">2019-08-08</span> ㅣ
                         <span class="meet-single-time">19:00~22:00</span> ㅣ
@@ -243,6 +244,7 @@
                     $('dd').addClass('hidden');
                     $(this).next().removeClass('hidden');
                 })
+
             </script>
         </div>
     </section>
@@ -265,4 +267,6 @@
     </section>
 
 
-</body></html>
+</body>
+
+</html>
