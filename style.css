@@ -17,9 +17,7 @@ h5
 
 }
 
-a {
-    display: block;
-}
+
 
 
 
@@ -31,8 +29,10 @@ a {
     display: inline-block;
     box-sizing: border-box;
     float: left;
-    width: 100%;
+    width: 96%;
     padding: 10px;
+    box-shadow:0 6px 8px 0 hsla(0, 0%, 0%, 0.2);
+    margin: 10px;
 }
 
 #icon-user {
@@ -64,11 +64,12 @@ a {
             display: inline-block;
         box-sizing: border-box;
         float: left;
-        width: 50%;
+        width: 47%;
         margin: 0;
         padding: 10px;
-        background-color: black;
         color: white;
+         box-shadow:0 6px 8px 0 hsla(0, 0%, 0%, 0.2);
+    margin: 10px; 
     }
 
     #login {
@@ -111,10 +112,11 @@ a {
             display: inline-block;
         box-sizing: border-box;
         float: left;
-        width: 33.33%;
+        width: 31.2%;
         margin: 0;
         padding: 10px;
-        background-color: blue;
+       box-shadow:0 6px 8px 0 hsla(0, 0%, 0%, 0.2);
+    margin: 10px; 
     }
 
     section {
@@ -428,67 +430,25 @@ img {
 
 
 
-/* section - region */
+/* 지역별 분류 */
 
 select {
 padding: 0 0.8em;
     margin: 10px 0;
     border: none;
-    border-bottom: 1px solid #a2a2a2;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
     height: 25px; 
 font-family: inherit; 
-background: url('icon/down-arrow.svg') no-repeat 95% 50%; 
-border-radius: 0px; 
--webkit-appearance: none; 
--moz-appearance: none;
-appearance: none;
 }
-select::-ms-expand {
-    display: none;
-}
-
-/*
-.search-region {
-    display: inline-block;
-    float: left;
-    width: 25%;
-    height: 27px;
-    padding: 3px;
-    margin: 10px;
-    border: none;
-    border-bottom: 1px solid #a2a2a2;
-}
-
-.search-region-detail {
-    display: inline-block;
-    float: left;
-    width: 30%;
-    height: 27px;
-    padding: 3px;
-    margin: 10px;
-    border: none;
-    border-bottom: 1px solid #a2a2a2;
-}
-
-.search-region-hot {
-    display: inline-block;
-    float: left;
-    width: 35%;
-    height: 27px;
-    padding: 3px;
-    margin: 10px;
-    border: none;
-    border-bottom: 1px solid #a2a2a2;
-}
-*/
-
 
 .meet-single {
     display: block;
-    padding: 2px 10px;
-    margin-top: 0;
-    border-top: 4px solid #40a4f4;
-    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    padding: 5px 10px;
+    border: 1px solid #d0d0d0;
+    background-color: #ffffff;
+    border-left: 6px solid #ff00ff;
+    margin-bottom: 10px;
 }
 
 .meet-single-id {
@@ -510,7 +470,7 @@ select::-ms-expand {
 
 .meet-single-title {
     font-size: 0.9em;
-    padding: 5px 0;
+    padding: 8px 0 8px 0;
     margin: 0;
       overflow: hidden; 
   text-overflow: ellipsis;
@@ -522,7 +482,6 @@ select::-ms-expand {
     color: #adadad;
     width: 100%;
     padding-bottom: 5px;
-    border-bottom: 1px solid #dddddd;
 }
 
 .meet-single-category {
@@ -532,66 +491,54 @@ select::-ms-expand {
 
 .button-apply {
     float: right;
-    margin: 10px;
-    padding: 2px;
-    font-size: 12px;
+    padding: 1px;
+    font-size: 0.8em;
     text-align: center;
     width: 60px;
-    height: 15px;
+    height: 2em;
     border: 1px solid #c7c7c7;
-    border-radius: 3px;
-    font-weight: bold;
     color: #ffffff;
-    background-color: #ed4c4c;
+    background-color: #c6c6c6;
 }
 
-.button-more {
-    width: 96%;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #c7c7c7;
-    border-radius: 3px;
-    background-color: #ffffff;
-}
-
-
-
-
-
-/* section - category */
-
-.image-button {
-    margin: 0;
-    padding: 20px 30px;
-}
-
-.image-button ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 10px 0 10px;
-    overflow: hidden;
-    width: 110%;
-}
-
-.image-button ul li {
-    float: left;
-    width: 100px;
+.morebtn {
     text-align: center;
+    font-size: 0.9em;
+    align-content:  color: #ffffff;
+    padding: 8px 0;
+    margin: 10px -10px -10px -10px;
+    background-color: #ededed;    
+}
+
+.morebtn a {
+    text-decoration: none;
 }
 
 
 
-.image-button img {
+
+
+/* 테마별 분류 */
+
+.categorybtn {
+    display:inline-block;
+    float:left;
+}
+
+.categorybtn img {
     border-radius: 50%;
     border: 1px solid #c7c7c7;
     width: 76px;
     height: 76px;
+    margin: 10px 5px 5px 10px;
 }
 
-.image-button figcaption {
-    font-size: 13px;
+.categorybtn figcaption {
     text-align: center;
+    font-size: 0.8em;
 }
+
+
 
 
 

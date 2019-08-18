@@ -80,7 +80,7 @@
                 </div>
                 <div class="cell">
                     <div class="dropdown">
-                        <button class="dropbtn" style="font-size:1.4em">+</button>
+                        <button class="dropbtn" style="font-size:1.3em">&#43;</button>
                         <div class="dropdown-content2">
                             <a href="notice.html">공지사항</a>
                             <a href="site-intro.html">사이트소개</a>
@@ -103,7 +103,6 @@
                 }
             });
         });
-
     </script>
 
 
@@ -136,10 +135,9 @@
 
     <section>
         <div class="colum">
-
             <h4>지역별 분류</h4>
-            <div style="display:block">
-                <select class="search-region" style="width:20%; min-width:80px;">
+            <div style="display:block;">
+                <select class="search-region" style="width:28%; min-width:80px;">
                     <option>대분류</option>
                     <option>부산</option>
                     <option>인천</option>
@@ -152,7 +150,7 @@
                     <option>경북</option>
                     <option>제주</option>
                 </select>&nbsp;
-                <select class="search-region-detail" style="width:25%; min-width:85px;">
+                <select class="search-region-detail" style="width:30%; min-width:85px;">
                     <option>소분류</option>
                     <option>#</option>
                     <option>#</option>
@@ -162,9 +160,8 @@
                     <option>#</option>
                     <option>#</option>
                     <option>#</option>
-                </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                <select class="search-region-hot" style="width:35%; min-width:90px;">
+                </select>&nbsp;
+                <select class="search-region-hot" style="width:37%; min-width:90px;">
                     <option>핫플레이스</option>
                     <option>#</option>
                     <option>#</option>
@@ -176,76 +173,87 @@
                     <option>#</option>
                 </select>
             </div>
-          
 
-            <div>
-                <div class="meet-single">
-                    <span class="meet-single-id"> [19080800001]</span>
-                    <span class="meet-single-read"> 조회수 100</span>
-                    <p class="meet-single-title">오늘 저녁 퇴근 후 피맥하실 직장인 모이세요 4명/성별무관/서울강남/2만원</p>
-                    <div class="meet-single-info">
-                        <span class="meet-single-date">2019-08-08</span> ㅣ
-                        <span class="meet-single-time">19:00~22:00</span> ㅣ
-                        <span class="meet-single-number">4명 </span> ㅣ
-                        <span class="meet-single-cost"> 20,000원</span>
-                        <label>
-                            <input class="button-apply" type="submmit" value="참여신청">
-                        </label>
-                    </div>
-                    <div class="meet-single-category" style="">
-                        <span class="meet-single-region" style="font-style:italic; color:#00e2e2">#서울/강남구</span>
+            <div class="meet-single">
+                <p class="meet-single-title">오늘 저녁 퇴근 후 피맥하실 직장인 모이세요 4명/성별무관/서울강남/2만원</p>
+                <div class="meet-single-info">
+                    <span class="meet-single-region" style="color:#747474">&#91;서울/강남구&#93;</span>
+                    <span style="color:#dbdbdb">&#47;</span>
+                    <span class="meet-single-date">2019-08-08</span>
+                    <span class="meet-single-time">19:00</span>
+                    <span style="color:#dbdbdb">&#47;</span>
+                    <span class="meet-single-number">4명 </span>
+                    <span style="color:#dbdbdb">&#47;</span>
+                    <span class="meet-single-cost"> 20,000원</span>
+                    <button class="button-apply" type="button">참여신청</button>
+                    <p style="margin:px"></p>
+
+                    <div id="detailbtn" style="CURSOR: hand; text-align:center; padding:3px 0; margin:0px -10px -10px; border-top: 1px solid #e0e0e0;" onclick="if(detail.style.display=='none') {detail.style.display='' ; detailbtn.innerText='접기'} else {detail.style.display='none'; detailbtn.innerText='펼쳐보기'}">펼쳐보기&nbsp;&nbsp;</div>
+                    <div id="detail" style="display:none">
+                        <p>모임제목전체</p>
+                        <p>날짜 및 시간</p>
+                        <p>지역(대분류/소분류)</p>
+                        <p>세부지역</p>
+                        <p>카테고리</p>
+                        <p>신청인원 / 모집인원</p>
+                        <p>회비</p>
+                        <p>모임 설명</p>
+                        <!--
+                       <div class="meet-single-category" style="">
+
                         <span class="meet-single-category" style="font-style:italic; color:#00e2e2"> #사교/미팅/파티</span>
                         <span class="meet-single-scrap"> ㅣ스크랩</span>
+                          <span class="meet-single-id"> [19080800001]</span>
+                    <span class="meet-single-read"> 조회수 100</span>
+                    </div>
+                    -->
                     </div>
                 </div>
-                <label>
-                    <input class="button-more" type="button" value="더보기 >">
-                </label>
+            </div>
+            
+            
+            
+            <div class="morebtn"><a href="index.html">더보기 &#62;</a>
             </div>
         </div>
 
-
         <div class="colum">
             <h4>테마별 분류</h4>
-            <figure class="image-button">
-                <ul>
-
-                    <li>
-                        <a href="#"><img src="/image/ctgr_study.jpg" alt="study and education"></a>
-                        <figcaption>학습/교육</figcaption>
-                    </li>
-
-                </ul>
-            </figure>
+            <div style="display:block; overflow:auto;">
+                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>학습/교육</figcaption>
+                </div>
+                                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>키즈/육아</figcaption>
+                </div>
+                
+                                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>여가/여행</figcaption>
+                </div>
+                                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>취미</figcaption>
+                </div>
+                                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>운동/액티비티</figcaption>
+                </div>
+                                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>사교/미팅</figcaption>
+                </div>
+                
+                
+            </div>
+            
+            
         </div>
-
-
-
-
-
 
         <div class="colum">
             <h4>날짜별 분류</h4>
-            <dl>
-                <dt>Menu 1</dt>
-                <dd>
-                    첫번째 탭메뉴 내용은 여기
-                </dd>
-
-                <dt>Menu 2</dt>
-                <dd class="hidden">
-                    두번째 탭메뉴 내용은 여기
-                </dd>
-            </dl>
-
-            <script>
-                var $menuEle = $('dt'); // 탭메뉴를 변수에 지정
-                $menuEle.click(function() { // 탭메뉴 클릭 이벤트
-                    $('dd').addClass('hidden');
-                    $(this).next().removeClass('hidden');
-                })
-
-            </script>
         </div>
     </section>
 
@@ -267,6 +275,4 @@
     </section>
 
 
-</body>
-
-</html>
+</body></html>
