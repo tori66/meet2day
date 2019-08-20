@@ -40,8 +40,11 @@
 -->
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slider.style.css">
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="slider.jquery.js"></script>
+
 </head>
 
 <body>
@@ -172,7 +175,9 @@
                     <span style="color:#dbdbdb">&#47;</span>
                     <span class="meet-single-date">2019-08-08</span>
                     <span class="meet-single-time">19:00</span>&nbsp;
-                    <button class="button-apply" type="button">참여신청</button> <span id="detailbtn1" style="CURSOR: hand; color:#0000ff;" onclick="if(detail1.style.display=='none') {detail1.style.display='' ; detailbtn1.innerText='접기'} else {detail1.style.display='none'; detailbtn1.innerText='펼쳐보기'}">펼쳐보기</span>
+                    <button class="button-apply" type="button">참여신청</button>
+                    <p style="margin:3px"></p>
+                    <span id="detailbtn1" style="CURSOR: hand; color:#0000ff;" onclick="if(detail1.style.display=='none') {detail1.style.display='' ; detailbtn1.innerText='접기'} else {detail1.style.display='none'; detailbtn1.innerText='펼쳐보기'}">펼쳐보기</span>
                     <div id="detail1" style="display:none">
                         <p>모임제목전체</p>
                         <p>날짜 및 시간</p>
@@ -183,6 +188,7 @@
                         <p>회비</p>
                         <p>모임 설명</p>
                     </div>
+
                 </div>
             </div>
 
@@ -195,7 +201,9 @@
                     <span style="color:#dbdbdb">&#47;</span>
                     <span class="meet-single-date">2019-08-08</span>
                     <span class="meet-single-time">19:00</span>&nbsp;
-                    <button class="button-apply" type="button">참여신청</button> <span id="detailbtn2" style="CURSOR: hand; color:#0000ff;" onclick="if(detail2.style.display=='none') {detail2.style.display='' ; detailbtn2.innerText='접기'} else {detail2.style.display='none'; detailbtn2.innerText='펼쳐보기'}">펼쳐보기</span>
+                    <button class="button-apply" type="button">참여신청</button>
+                    <p style="margin:3px"></p>
+                    <span id="detailbtn2" style="CURSOR: hand; color:#0000ff;" onclick="if(detail2.style.display=='none') {detail2.style.display='' ; detailbtn2.innerText='접기'} else {detail2.style.display='none'; detailbtn2.innerText='펼쳐보기'}">펼쳐보기</span>
                     <div id="detail2" style="display:none">
                         <p>모임제목전체</p>
                         <p>날짜 및 시간</p>
@@ -218,8 +226,37 @@
                     <span style="color:#dbdbdb">&#47;</span>
                     <span class="meet-single-date">2019-08-08</span>
                     <span class="meet-single-time">19:00</span>&nbsp;
-                    <button class="button-apply" type="button">참여신청</button> <span id="detailbtn3" style="CURSOR: hand; color:#0000ff;" onclick="if(detail3.style.display=='none') {detail3.style.display='' ; detailbtn3.innerText='접기'} else {detail3.style.display='none'; detailbtn3.innerText='펼쳐보기'}">펼쳐보기</span>
+
+                    <button class="button-apply" type="button">참여신청</button>
+                    <p style="margin:3px"></p>
+                    <span id="detailbtn3" style="CURSOR: hand; color:#0000ff;" onclick="if(detail3.style.display=='none') {detail3.style.display='' ; detailbtn3.innerText='접기'} else {detail3.style.display='none'; detailbtn3.innerText='펼쳐보기'}">펼쳐보기</span>
                     <div id="detail3" style="display:none">
+                        <p>모임제목전체</p>
+                        <p>날짜 및 시간</p>
+                        <p>지역(대분류/소분류)</p>
+                        <p>세부지역</p>
+                        <p>카테고리</p>
+                        <p>신청인원 / 모집인원</p>
+                        <p>회비</p>
+                        <p>모임 설명</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meet-single">
+                <p class="meet-single-title">오늘 저녁 퇴근 후 피맥하실 직장인 모이세요 4명/성별무관/서울강남/2만원</p>
+                <div class="meet-single-info">
+                    <span class="meet-single-region" style="color:#747474">서울/강남구</span>
+                    <span style="color:#dbdbdb">&#47;</span>
+                    <span class="meet-single-place">선릉역</span>
+                    <span style="color:#dbdbdb">&#47;</span>
+                    <span class="meet-single-date">2019-08-08</span>
+                    <span class="meet-single-time">19:00</span>&nbsp;
+
+                    <button class="button-apply" type="button">참여신청</button>
+                    <p style="margin:3px"></p>
+                    <span id="detailbtn4" style="CURSOR: hand; color:#0000ff;" onclick="if(detail4.style.display=='none') {detail4.style.display='' ; detailbtn4.innerText='접기'} else {detail4.style.display='none'; detailbtn4.innerText='펼쳐보기'}">펼쳐보기</span>
+                    <div id="detail4" style="display:none">
                         <p>모임제목전체</p>
                         <p>날짜 및 시간</p>
                         <p>지역(대분류/소분류)</p>
@@ -238,79 +275,105 @@
 
 
 
-
-
-
         <div class="colum">
             <h4>테마별 분류</h4>
-            <div class="imgshow-container">
-                <table border="1">
-                    <tr>
-                        <td style="width:50px;height:70px;"><a class="prev" onclick="plusImgs(-1)">&#10094;</a></td>
-                        <td>
-                            <div class="myImgs fadeImg">
-                                <img src="http://placehold.it/300x100" style="width:100%">
-                                <div class="imgtext">Caption Text</div>
-                            </div>
+            <div style="box-sizing: border-box">
 
-                            <div class="myImgs fadeImg">
-                                <img src="http://placehold.it/301x100" style="width:100%">
-                                <div class="imgtext">Caption Two</div>
-                            </div>
 
-                            <div class="myImgs fadeImg">
-                                <img src="http://placehold.it/302x100" style="width:100%">
-                                <div class="imgtext">Caption Three</div>
-                            </div>
-                        </td>
-                        <td><a class="next" onclick="plusImgs(1)">&#10095;</a></td>
-                    </tr>
-                </table>
+                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>학습/교육</figcaption>
+                </div>
+                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>학습/교육</figcaption>
+                </div>
+                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>학습/교육</figcaption>
+                </div>
+                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>학습/교육</figcaption>
+                </div>
+                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>학습/교육</figcaption>
+                </div>
+                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>학습/교육</figcaption>
+                </div>
+                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>학습/교육</figcaption>
+                </div>
+                <div class="categorybtn">
+                    <a href="#"><img src="#"></a>
+                    <figcaption>학습/교육</figcaption>
+                </div>
+
+            </div>
+            <p></p>
+
+            <div class="meet-single">
+                <p class="meet-single-title">이번 주말 번개캠핑 가요. 자녀 동반 가능함. 동막해변/3팀/30대/5만원</p>
+                <div class="meet-single-info">
+                    <span class="meet-single-region" style="color:#747474">여가/여행</span>
+                    <span style="color:#dbdbdb">&#47;</span>
+                    <span class="meet-single-place">동막해변</span>
+                    <span style="color:#dbdbdb">&#47;</span>
+                    <span class="meet-single-date">2019-08-08</span>
+                    <span class="meet-single-time">19:00</span>&nbsp;
+                    <button class="button-apply" type="button">참여신청</button>
+                    <p style="margin:3px"></p>
+                    <span id="detailbtn11" style="CURSOR: hand; color:#0000ff;" onclick="if(detail11.style.display=='none') {detail11.style.display='' ; detailbtn11.innerText='접기'} else {detail11.style.display='none'; detailbtn11.innerText='펼쳐보기'}">펼쳐보기</span>
+                    <div id="detail11" style="display:none">
+                        <p>모임제목전체</p>
+                        <p>날짜 및 시간</p>
+                        <p>지역(대분류/소분류)</p>
+                        <p>세부지역</p>
+                        <p>카테고리</p>
+                        <p>신청인원 / 모집인원</p>
+                        <p>회비</p>
+                        <p>모임 설명</p>
+                    </div>
+                </div>
             </div>
 
-            <!-- 슬라이드 메뉴 스크립트 -->
-            <script>
-                var imgIndex = 1;
-                showImgs(imgIndex);
-
-                function plusImgs(n) {
-                    showImgs(imgIndex += n);
-                }
-
-                function currentImg(n) {
-                    showImgs(imgIndex = n);
-                }
-
-                function showImgs(n) {
-                    var i;
-                    var imgs = document.getElementsByClassName("myImgs");
-                    if (n > imgs.length) {
-                        imgIndex = 1
-                    }
-                    if (n < 1) {
-                        imgIndex = imgs.length
-                    }
-                    for (i = 0; i < imgs.length; i++) {
-                        imgs[i].style.display = "none";
-                    }
-                    imgs[imgIndex - 1].style.display = "block";
-                }
-            </script>
-
-
-
-
-
-
-            <div class="categorybtn">
-                <a href="#"><img src="#"></a>
-                <figcaption>학습/교육</figcaption>
+            <div class="meet-single">
+                <p class="meet-single-title">이번 주말 번개캠핑 가요. 자녀 동반 가능함. 동막해변/3팀/30대/5만원</p>
+                <div class="meet-single-info">
+                    <span class="meet-single-region" style="color:#747474">여가/여행</span>
+                    <span style="color:#dbdbdb">&#47;</span>
+                    <span class="meet-single-place">동막해변</span>
+                    <span style="color:#dbdbdb">&#47;</span>
+                    <span class="meet-single-date">2019-08-08</span>
+                    <span class="meet-single-time">19:00</span>&nbsp;
+                    <button class="button-apply" type="button">참여신청</button>
+                    <p style="margin:3px"></p>
+                    <span id="detailbtn12" style="CURSOR: hand; color:#0000ff;" onclick="if(detail12.style.display=='none') {detail12.style.display='' ; detailbtn12.innerText='접기'} else {detail12.style.display='none'; detailbtn12.innerText='펼쳐보기'}">펼쳐보기</span>
+                    <div id="detail12" style="display:none">
+                        <p>모임제목전체</p>
+                        <p>날짜 및 시간</p>
+                        <p>지역(대분류/소분류)</p>
+                        <p>세부지역</p>
+                        <p>카테고리</p>
+                        <p>신청인원 / 모집인원</p>
+                        <p>회비</p>
+                        <p>모임 설명</p>
+                    </div>
+                </div>
             </div>
 
 
-
-
+            <div class="morebtn"><a href="index.html">더보기 &#10093;&#10093;</a>
+            </div>
         </div>
+
+
+
+
 
         <div class="colum">
             <h4>날짜별 분류</h4>
