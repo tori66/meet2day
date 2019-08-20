@@ -13,7 +13,6 @@ h4,
 h5 {
     padding: 0;
     margin: 0 auto;
-
 }
 
 
@@ -27,10 +26,9 @@ h5 {
 .colum {
     display: inline-block;
     box-sizing: border-box;
-    
     width: 100%;
     padding: 10px;
-    box-shadow: 0 6px 8px 0 hsla(0, 0%, 0%, 0.2);
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -65,14 +63,13 @@ h5 {
     .colum {
         display: inline-block;
         box-sizing: border-box;
-       
         width: 48%;
         padding: 10px;
-        box-shadow: 0 6px 8px 0 hsla(0, 0%, 0%, 0.2);
+        box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
         margin-bottom: 10px;
         margin-left: 5px;
         margin-right: 5px;
-         vertical-align: top;
+        vertical-align: top;
     }
 
     #login {
@@ -114,14 +111,13 @@ h5 {
     .colum {
         display: inline-block;
         box-sizing: border-box;
-        
         width: 31%;
         padding: 10px;
-        box-shadow: 0 6px 8px 0 hsla(0, 0%, 0%, 0.2);
+        box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
         margin-bottom: 10px;
         margin-left: 7px;
         margin-right: 7px;
-         vertical-align: top;
+        vertical-align: top;
     }
 
     section {
@@ -222,7 +218,7 @@ header {
     z-index: 9999;
     text-align: center;
     padding: 2px;
-     background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .outer {
@@ -449,6 +445,7 @@ select {
     margin: 0 0 5px 0;
 }
 
+/*
 .meet-single-id {
     display: inline-block;
     padding: 0;
@@ -465,6 +462,8 @@ select {
     font-size: 0.8em;
     color: #adadad;
 }
+*/
+
 
 .meet-single-title {
     font-size: 0.85em;
@@ -516,6 +515,7 @@ select {
 
 
 
+
 /* 테마별 분류 */
 
 
@@ -539,30 +539,26 @@ select {
 
 
 
-
-
-
 /* section - date */
-dl {
-    position: relative;
+
+.date-category {
+    padding: 10px 0 10px 10px;
+    margin: 0;
 }
 
-dt {
-    height: 30px;
-    float: left;
-    width: 50%;
-    z-index: 9;
-    position: relative;
+
+.date-category a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #000000;
 }
 
-dd {
-    position: absolute;
-    padding-top: 30px;
-    background-color: #f3f3f3;
-    width: 50%;
-    height: 200px;
+.date-category a:active {
+    font-weight: bold;
+    border-bottom: 2px solid #000000;
 }
 
-dd.hidden {
-    display: none;
+.date-category a:hover {
+    font-weight: bold;
+    border-bottom: 2px solid #000000;
 }
