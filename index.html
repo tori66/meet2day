@@ -40,10 +40,10 @@
 -->
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="slider.style.css">
+    <link rel="stylesheet" type="text/css" href="swiper.css">
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="jquery-3.4.1.js"></script>
-    <script type="text/javascript" src="slider.jquery.js"></script>
+
 
 </head>
 
@@ -276,40 +276,86 @@
 
         <div class="colum">
             <h4>테마별 분류</h4>
-            <div style="box-sizing: border-box">
-                <div class="categorybtn">
+            
+            
+            
+   <div class="swiper-container">
+		<ul class="swiper-wrapper tabs">
+			<li class="swiper-slide active">                <div class="categorybtn">
                     <a href="#"><img src="#"></a>
                     <figcaption>학습/교육</figcaption>
-                </div>
-                <div class="categorybtn">
+                </div></li>
+			<li class="swiper-slide"><div class="categorybtn">
                     <a href="#"><img src="#"></a>
-                    <figcaption>학습/교육</figcaption>
-                </div>
-                <div class="categorybtn">
+                    <figcaption>여가/여행</figcaption>
+                </div></li>
+			<li class="swiper-slide"><div class="categorybtn">
                     <a href="#"><img src="#"></a>
-                    <figcaption>학습/교육</figcaption>
-                </div>
-                <div class="categorybtn">
+                    <figcaption>유아/아동</figcaption>
+                </div></li>
+			<li class="swiper-slide"><div class="categorybtn">
                     <a href="#"><img src="#"></a>
-                    <figcaption>학습/교육</figcaption>
-                </div>
-                <div class="categorybtn">
+                    <figcaption>운동/액티비티</figcaption>
+                </div></li>
+			<li class="swiper-slide"><div class="categorybtn">
                     <a href="#"><img src="#"></a>
-                    <figcaption>학습/교육</figcaption>
-                </div>
-                <div class="categorybtn">
+                    <figcaption>취미</figcaption>
+                </div></li>
+			<li class="swiper-slide"><div class="categorybtn">
                     <a href="#"><img src="#"></a>
-                    <figcaption>학습/교육</figcaption>
-                </div>
-                <div class="categorybtn">
+                    <figcaption>공연/문화</figcaption>
+                </div></li>
+			<li class="swiper-slide"><div class="categorybtn">
                     <a href="#"><img src="#"></a>
-                    <figcaption>학습/교육</figcaption>
-                </div>
-                <div class="categorybtn">
+                    <figcaption>사교/미팅</figcaption>
+                </div></li>
+			<li class="swiper-slide"><div class="categorybtn">
                     <a href="#"><img src="#"></a>
-                    <figcaption>학습/교육</figcaption>
-                </div>
-            </div>
+                    <figcaption>단체활동</figcaption>
+                </div></li>
+		</ul>  
+    </div>          
+            
+            
+            
+      <!-- Swiper JS -->
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="http://idangero.us/swiper/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper_1 = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 5,
+        paginationClickable: true,
+        spaceBetween: 0,
+        freeMode: true,
+		pagination: false
+    });
+
+	$('.tabs > li > a').on('click', function(e){
+		$(this).parent().addClass('active').siblings().removeClass('active');
+		var tabIdx = $(this).parent().index();
+		swiper_2.slideTo(tabIdx+1, 300);
+		e.preventDefault();
+	});
+
+	var tabLen = $('.tabs > li').length;
+</script>          
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+ 
             <p></p>
 
             <div class="meet-single">

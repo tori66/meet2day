@@ -519,6 +519,16 @@ select {
 /* 테마별 분류 */
 
 
+
+
+ul, li {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+
+
 .categorybtn {
     display: inline-block;
 }
@@ -535,6 +545,18 @@ select {
     text-align: center;
     font-size: 0.7em;
 }
+
+
+
+	
+
+
+
+
+
+
+
+
 
 
 
