@@ -109,14 +109,14 @@
 .swiper-button-prev,.swiper-button-next {
     position: absolute;
     top: 50%;
-    width: 27px;
-    height: 44px;
+    width: 15px;
+    height: 30px;
     margin-top: -22px;
     z-index: 10;
     cursor: pointer;
     -moz-background-size: 27px 44px;
     -webkit-background-size: 27px 44px;
-    background-size: 27px 44px;
+    background-size: 15px 30px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -323,7 +323,7 @@ button.swiper-pagination-bullet {
 .swiper-container-3d .swiper-slide-shadow-left {
     background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0.5)),to(rgba(0,0,0,0)));
     background-image: -webkit-linear-gradient(right,rgba(0,0,0,0.5),rgba(0,0,0,0));
-   background-image: -moz-linear-gradient(right,rgba(0,0,0,0.5),rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(right,rgba(0,0,0,0.5),rgba(0,0,0,0));
     background-image: -o-linear-gradient(right,rgba(0,0,0,0.5),rgba(0,0,0,0));
     background-image: linear-gradient(to left,rgba(0,0,0,0.5),rgba(0,0,0,0));
 }
@@ -527,4 +527,3 @@ button.swiper-pagination-bullet {
         transform: rotate(360deg);
     }
 }
-
