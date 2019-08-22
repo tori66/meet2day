@@ -616,4 +616,44 @@ li {
 }
 
 
-/* blog */
+/* 모임 후기 */
+
+.meet-review {
+    text-align: center;
+    padding:0;
+    margin: 10px auto;
+}
+
+.meet-review figure {
+    padding: 0;
+    margin: 0;
+}
+
+.meet-review figure a {
+    text-decoration: none;
+    margin: 5px auto;
+    color: #000000;
+    font-size: 0.8em;
+}
+
+.meet-review-single img {
+    width: 150px;
+    height: 100px;
+}
+
+.meet-review-single figcaption {
+    text-align: left;
+    width: 150px;
+    height: 35px;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+.meet-review-single-info figcaption .meet-review-single-info {
+    width: 150px;
+    height: 10px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+
