@@ -48,7 +48,7 @@ nav {border:1px solid black; margin:0 auto; width:100%;}
 
 section {border:1px solid black; margin:0 auto; width:100%;}
 
-.container-slideshow {background-color:aqua; margin:0 auto; width:100%; height:200px;}
+.container-slideshow {background-color:aqua; margin:0 auto; width:100%; height:auto;}
 
 .section-inner1 {background-color:darkslateblue; margin:0 40px; height:200px;}
 .main-colum-1 {background-color:red; width:50%; height:100px; float:left;}
@@ -73,26 +73,42 @@ footer {border:1px solid black; margin:0 auto; width:100%;}
 #logo {font-family:verdana; display:inline-block; font-size:1.4rem; font-weight:bold; padding:11px 0; float:left;}
 
 #login {display:inline-block; font-size:1rem; color:#9a9a9a; border:2px solid #0000ff; padding:8px 14px; margin:5px; float:right;}
-#signup {display:inline-block; font-size:1rem; color:#9a9a9a; padding:8px 10px; margin:7px; float:right;}
+#signup {display:inline-block; font-size:1rem; color:#9a9a9a; padding:8px 0 8px 10px; margin:7px 0 7px 7px; float:right;}
 #icon-user {display:none;}
-#icon-search {display:inline-block; width:1.5rem; height:1.5rem; margin:14px 24px; float:right;}
+#icon-search {display:inline-block; width:1.3rem; height:1.3rem; margin:15px 24px; float:right;}
 
 #login:hover {color:black;}
 #signup:hover {color:black;}
-#icon-search:hover {width:1.6rem; height:1.6rem;}
+#icon-search:hover {width:1.4rem; height:1.4rem;}
 #logo:active {border:1px solid #9a9a9a;}
 #login:active {border:1px solid #9a9a9a; color:black;}
 #signup:active {border:1px solid #9a9a9a; color:black;}
-#icon-search:active {border:1px solid #9a9a9a; width:1.6rem; height:1.6rem;}
+#icon-search:active {border:1px solid #9a9a9a; width:1.4rem; height:1.4rem;}
 
 
 
 /* navigation */
-.nav-inner table {margin-left:auto; margin-right:auto;}
-.nav-cell {display:table-cell; font-size:1rem; color:#9a9a9a; padding:8px 29px;}
+.nav-inner table {width:100%; text-align:center;}
+.nav-cell {display:table-cell; font-size:1rem; color:#9a9a9a; padding:10px;}
 
 .nav-cell:hover {color:black;}
 .nav-cell:active {border:1px solid #9a9a9a; color:black;}
+
+.navFixed {position:fixed; top:0px; width:100%; z-index:9999; text-align:center; padding:2px; background-color:#ffffff; border-bottom:2px solid #9a9a9a;}
+
+
+
+/* slideshow */
+.mySlides {display:none;}
+.captext {display:inline; color:#ffffff; font-size: 1.2rem; padding:0 40px; position:relative; top:-60px; width:100%; text-align:left;}
+.dot {display:inline-block; height: 0.2rem; width:2rem; margin:-1px; top:-60px; left:40px; background-color:#e3e3e3; transition:background-color 0.6s ease; position:relative; }
+.activedot {background-color:#00ff00;}
+.fade {-webkit-animation-name:fade; -webkit-animation-duration:1.5s; animation-name:fade; animation-duration:1.5s;}
+
+
+
+
+
 
 
 

@@ -13,6 +13,10 @@
     <link rel="stylesheet" type="text/css" media="( min-width:769px ) and ( max-width:1239px )" href="notebook.css">
     <link rel="stylesheet" type="text/css" media="( min-width:376px ) and ( max-width:768px )" href="tablet.css">
     <link rel="stylesheet" type="text/css" media="( min-width:0px ) and ( max-width:375px )" href="mobile.css">
+   
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="script.js"></script> 
+    
 </head>
 
 <body>
@@ -26,27 +30,49 @@
         </div>
     </header>
 
-    <nav>
+    <nav class="nav">
         <div class="nav-inner">
                <table>
                 <tr>
-                    <a href="index.html"><td class="nav-cell">홈</td></a>
-                    <a href="index.html"><td class="nav-cell">모임참여</td></a>
-                    <a href="index.html"><td class="nav-cell">모임개설</td></a>     
-                    <a href="index.html"><td class="nav-cell">내모임</td></a>
-                    <a href="index.html"><td class="nav-cell">커뮤니티</td></a>
-                    <a href="index.html"><td class="nav-cell">공지/안내</td></a>  
+                   <td class="nav-cell"><a href="index.html">홈</a></td>
+                   <td class="nav-cell"><a href="index.html">모임참여</a></td>
+                    <td class="nav-cell"><a href="index.html">모임개설</a></td>     
+                    <td class="nav-cell"><a href="index.html">내모임</a></td>
+                    <td class="nav-cell"><a href="index.html">커뮤니티</a></td>
+                    <td class="nav-cell"><a href="index.html">공지/안내</a></td>  
                 </tr>
-               </table>         
-
+               </table>
         </div>
      </nav>
-
-    <section>
+        <script>
+        $(document).ready(function() {
+            var jbOffset = $('.nav').offset();
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > jbOffset.top) {
+                    $('.nav').addClass('navFixed');
+                } else {
+                    $('.nav').removeClass('navFixed');
+                }
+            });
+        });
+    </script>
+    
+    <figure>
         <div class="container-slideshow">
-            슬라이드쇼
+            <div class="mySlides fade"><img src="img/slideshow1.jpg" style="width:100%">
+            <div class="captext">어울림</div></div>
+            <div class="mySlides fade"><img src="img/slideshow2.jpg" style="width:100%">
+            <div class="captext">마음이 통하는 사람들과 함께 하는 오늘</div></div>
+            <div class="mySlides fade"><img src="img/slideshow3.jpg" style="width:100%">
+            <div class="captext">친목 액티비티 번개모임도 밋투데이</div></div>          
+        
         </div>
-    </section>
+        <div>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </figure>
 
     <section>
         <div class="section-inner1">
@@ -74,6 +100,8 @@
            푸터
        </div>
     </footer>
+
+
 
 
 </body>
