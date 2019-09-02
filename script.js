@@ -1,3 +1,4 @@
+/*
 function init() {
     var slideIndex = 0;
 showSlides();
@@ -21,7 +22,7 @@ function showSlides() {
 }
 
 window.onload = init;
-
+*/
 
 
 
