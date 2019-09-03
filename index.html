@@ -12,39 +12,46 @@
     <link rel="stylesheet" type="text/css" href="desktop.css">
     <link rel="stylesheet" type="text/css" media="( min-width:769px ) and ( max-width:1239px )" href="notebook.css">
     <link rel="stylesheet" type="text/css" media="( min-width:376px ) and ( max-width:768px )" href="tablet.css">
-    <link rel="stylesheet" type="text/css" media="( min-width:0px ) and ( max-width:375px )" href="mobile.css"> 
-       
-    
+    <link rel="stylesheet" type="text/css" media="( min-width:0px ) and ( max-width:375px )" href="mobile.css">
+
+
+
 </head>
 
 <body>
     <header>
         <div class="header-inner">
-            <a href="index.html"><h1 id="logo">meet2day</h1></a> 
-            <a href="index.html"><p id="signup">회원가입</p></a>
-            <a href="index.html"><p id="login">로그인</p></a>
+            <a href="index.html">
+                <h1 id="logo">meet2day</h1>
+            </a>
+            <a href="index.html">
+                <p id="signup">회원가입</p>
+            </a>
+            <a href="index.html">
+                <p id="login">로그인</p>
+            </a>
             <a href="index.html"><img id="icon-user" src="icon/user.svg"></a>
-            <a href="index.html"><img id="icon-search" src="icon/search.svg"></a>            
+            <a href="index.html"><img id="icon-search" src="icon/search.svg"></a>
         </div>
     </header>
 
     <nav class="nav">
         <div class="nav-inner">
-               <table>
+            <table>
                 <tr>
-                   <td class="nav-cell"><a href="index.html">홈</a></td>
-                   <td class="nav-cell"><a href="index.html">모임참여</a></td>
-                    <td class="nav-cell"><a href="index.html">모임개설</a></td>     
+                    <td class="nav-cell"><a href="index.html">홈</a></td>
+                    <td class="nav-cell"><a href="index.html">모임참여</a></td>
+                    <td class="nav-cell"><a href="index.html">모임개설</a></td>
                     <td class="nav-cell"><a href="index.html">내모임</a></td>
                     <td class="nav-cell"><a href="index.html">커뮤니티</a></td>
-                    <td class="nav-cell"><a href="index.html">공지/안내</a></td>  
+                    <td class="nav-cell"><a href="index.html">공지/안내</a></td>
                 </tr>
-               </table>
+            </table>
         </div>
-     </nav>
-      
-       <script type="text/javascript" src="jquery-3.4.1.js"></script>
-        <script>
+    </nav>
+
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script>
         $(document).ready(function() {
             var jbOffset = $('.nav').offset();
             $(window).scroll(function() {
@@ -56,87 +63,104 @@
             });
         });
     </script>
-    
+
     <figure>
         <div class="container-slideshow">
-           <!--
-            <div class="mySlides fade"><img src="img/slideshow1.jpg" style="width:100%">
+            <div class="mySlides"><img src="img/slideshow1.jpg" style="width:100%">
             </div>
-            <div class="mySlides fade"><img src="img/slideshow2.jpg" style="width:100%">
-            </div>          
-            -->
-            <div class="mySlides fade"><img src="img/slideshow3.jpg" style="width:100%">
+            <div class="mySlides"><img src="img/slideshow2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides"><img src="img/slideshow3.jpg" style="width:100%">
             </div>
         </div>
     </figure>
+    
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
 
     <section>
         <div class="section-inner1">
             <div class="main-colum-1">
-                 <h2 class="colum-title">지역별 분류</h2>
+                <h2 class="colum-title">지역별 분류</h2>
                 <form action="#">
-                      <select name="region" class="search-region">
-                            <option value="#">서울</option>
-                            <option>부산</option>
-                            <option>인천</option>
-                            <option>경기</option>
-                            <option>충남</option>
-                            <option>충북</option>
-                            <option>전남</option>
-                            <option>전북</option>
-                            <option>경남</option>
-                            <option>경북</option>
-                            <option>제주</option>
-                        </select>&nbsp;
-                        <select name="region-detail" class="search-region-detail">
-                            <option>전체</option>
-                            <option>#</option>
-                            <option>#</option>
-                            <option>#</option>
-                            <option>#</option>
-                            <option>#</option>
-                            <option>#</option>
-                            <option>#</option>
-                            <option>#</option>
-                        </select>&nbsp;
-                        <input class="inputbtn" type="summit" value="확인">
-            </form>
-            
-             <div class="meet-single">
-                <p class="meet-single-title">오늘 저녁 퇴근 후 피맥하실 직장인 모이세요 4명/성별무관/서울강남/2만원</p>
-                <div class="meet-single-info">
-                    <span class="meet-single-region">서울/강남구</span>
-                    <span style="color:#dbdbdb">&#47;</span>
-                    <span class="meet-single-place">선릉역</span>
-                    <span style="color:#dbdbdb">&#47;</span>
-                    <span class="meet-single-date">2019-08-08</span>
-                    <span class="meet-single-time">19:00</span>&nbsp;
-                    <button class="button-apply" type="button">참여신청</button>
-                    <p style="margin:3px"></p>
-                    <span class="meet-single-id">아이디</span>&nbsp; &nbsp;
-                    <span class="meet-single-read">조회수</span>&nbsp; &nbsp;
-                    <span id="detailbtn1" style="CURSOR: hand; color:#0000ff;" onclick="if(detail1.style.display=='none') {detail1.style.display='' ; detailbtn1.innerText='접기'} else {detail1.style.display='none'; detailbtn1.innerText='펼쳐보기'}">펼쳐보기</span>
-                    <div id="detail1" style="display:none">
-                        <p>모임제목전체</p>
-                        <p>날짜 및 시간</p>
-                        <p>지역(대분류/소분류)</p>
-                        <p>세부지역</p>
-                        <p>카테고리</p>
-                        <p>신청인원 / 모집인원</p>
-                        <p>회비</p>
-                        <p>모임 설명</p>
+                    <select name="region" class="search-region">
+                        <option value="#">서울</option>
+                        <option>부산</option>
+                        <option>인천</option>
+                        <option>경기</option>
+                        <option>충남</option>
+                        <option>충북</option>
+                        <option>전남</option>
+                        <option>전북</option>
+                        <option>경남</option>
+                        <option>경북</option>
+                        <option>제주</option>
+                    </select>&nbsp;
+                    <select name="region-detail" class="search-region-detail">
+                        <option>전체</option>
+                        <option>#</option>
+                        <option>#</option>
+                        <option>#</option>
+                        <option>#</option>
+                        <option>#</option>
+                        <option>#</option>
+                        <option>#</option>
+                        <option>#</option>
+                    </select>&nbsp;
+                    <input class="inputbtn" type="summit" value="확인">
+                </form>
+
+                <div class="meet-single">
+                    <p class="meet-single-title">오늘 저녁 퇴근 후 피맥하실 직장인 모이세요 4명/성별무관/서울강남/2만원</p>
+                    <div class="meet-single-info">
+                        <span class="meet-single-region">서울/강남구</span>
+                        <span style="color:#dbdbdb">&#47;</span>
+                        <span class="meet-single-place">선릉역</span>
+                        <span style="color:#dbdbdb">&#47;</span>
+                        <span class="meet-single-date">2019-08-08</span>
+                        <span class="meet-single-time">19:00</span>&nbsp;
+                        <button class="button-apply" type="button">참여신청</button>
+                        <p style="margin:3px"></p>
+                        <span class="meet-single-id">아이디</span>&nbsp; &nbsp;
+                        <span class="meet-single-read">조회수</span>&nbsp; &nbsp;
+                        <span id="detailbtn1" style="CURSOR: hand; color:#0000ff;" onclick="if(detail1.style.display=='none') {detail1.style.display='' ; detailbtn1.innerText='접기'} else {detail1.style.display='none'; detailbtn1.innerText='펼쳐보기'}">펼쳐보기</span>
+                        <div id="detail1" style="display:none">
+                            <p>모임제목전체</p>
+                            <p>날짜 및 시간</p>
+                            <p>지역(대분류/소분류)</p>
+                            <p>세부지역</p>
+                            <p>카테고리</p>
+                            <p>신청인원 / 모집인원</p>
+                            <p>회비</p>
+                            <p>모임 설명</p>
+                        </div>
                     </div>
                 </div>
+
+
+
+
             </div>
-            
-            
-            
-            
-            </div>
-            
-            
-            
-            
+
+
+
+
             <div class="main-colum-2">컬럼2</div>
             <div class="main-colum-3">컬럼3</div>
         </div>
@@ -156,13 +180,13 @@
     </section>
 
     <footer>
-       <div class="footer-inner">
-           푸터
-       </div>
+        <div class="footer-inner">
+            푸터
+        </div>
     </footer>
 
 
     <script type="text/javascript" src="script.js"></script>
 
-</body>
-</html>
+
+</body></html>
