@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>지역별 분류</title>
+
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto 80px;
+  grid-gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 0;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item1 {font-size: 0.85rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
+    
+    .item2, .item3, .item4 {font-size: 0.7rem; color:#9a9a9a;}
+    .item2, .item5 {text-align:end;}
+    
+    ul {padding:0; margin:0;}
+    li{list-style-type:none; padding:0 10px 0 0; float:left;}    
+</style>
+</head>
+
+<body>
+
+<div class="grid-container">
+  <div class="item1">오늘 저녁 퇴근 후 피맥하실 직장인 모이세요 4명/성별무관/서울강남/2만원</div>
+  <div class="item2">조회수 100</div>
+  <div class="item3">
+      <ul> 
+      <li>지역/세부지역</li>
+      <li>장소</li>
+      <li>날짜</li>
+      <li>시간</li>
+      <li></li>
+      </ul>
+  </div>
+  <div class="item4">
+    <ul> 
+      <li>모집인원</li>
+      <li>참가비</li>
+      <li></li>
+      </ul>
+    </div> 
+  <div class="item5"><button class="btn-apply" type="button">참여신청</button></div> 
+</div>
+
+</body></html>
