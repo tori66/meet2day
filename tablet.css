@@ -101,5 +101,22 @@ footer {border:1px solid black; margin:0 auto; width:100%;}
 
 
 
+/* 지역별 분류 */
+.colum-title {padding:10px 0; font-weight:bold;}
+select, .inputbtn {padding:0 0.7rem; border:1px solid #9a9a9a; border-radius:5px;  height:1.5rem; font-family: inherit;}
+.search-region {width:80px;}
+.search-region-detail {width:100px;}
+
+iframe {width:100%; height:150px;}
+
+
+
+
+
+
+
+
+
+
 
 
